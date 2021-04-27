@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>КФХ - Дефектовые ведомости</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+
+      <link href="toolkit-inverse.css" rel="stylesheet">
+      <link href="application.css" rel="stylesheet">
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      body {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+      }
+    </style>
+  </head>
+
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 sidebar">
+        <nav class="sidebar-nav">
+          <div class="sidebar-header">
+            <a class="sidebar-brand img-responsive" href="index.html">
+              <span class="icon icon-leaf sidebar-brand-icon">КФХ</span> 
+            </a>
+            
+          </div>
+
+          <div class="collapse nav-toggleable-md" id="nav-toggleable-md">
+            <form class="sidebar-form">
+              <input class="form-control" type="text" placeholder="Search...">
+              <button type="submit" class="btn-link">
+                <span class="icon icon-magnifying-glass"></span>
+              </button>
+            </form>
+            <ul class="nav nav-pills nav-stacked flex-column">
+              <li class="nav-header">Колесная техника</li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Техника 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href="#">Техника 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Техника 3</a>
+              </li>
+
+              <li class="nav-header">Гусеничная техника</li>
+              <li class="nav-item">
+                <a class="nav-link "href="#">
+                  Техника 1
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Техника 2
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">
+                  Техника 3
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Техника 4
+                </a>
+              </li>
+            </ul>
+            <hr class="visible-xs mt-3">
+          </div>
+        </nav>
+      </div>
+      
+      <div class="col-md-10 content">
+        <div class="dashhead">
+  <div class="dashhead-titles">
+    <h6 class="dashhead-subtitle">Дефектовочные ведомости и ТО</h6>
+    <h2 class="dashhead-title">История ремонта и обслуживания</h2>
+  </div>
+
+  <div class="btn-toolbar dashhead-toolbar">
+    <div class="btn-toolbar-item input-with-icon">
+      <input type="text" value="27/04/21 - 31/12/21" class="form-control" data-provide="datepicker">
+      <span class="icon icon-calendar"></span>
+    </div>
+  </div>
+</div>
+
+<div class="table-responsive">
+  <table class="table" data-sort="table" >
+    <thead>
+      <tr>
+        <th style="text-align: center;">Дата</th>
+        <th style="text-align: center;">№</th>
+        <th style="text-align: center;">ТО и выполненные работы</th>
+        <th style="text-align: center;">Количество штук (расходные материалы)</th>
+        <th style="text-align: center;">ФИО исполнителя</th>
+        <th style="text-align: center;">Стоимость</th>
+        <th style="text-align: center;">Руководитель (контролер)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="hover_line_table" style="border-bottom: solid 1px #434857">
+        <td>
+          01/01/2021
+        </td>
+        <td>
+          <a href="#">#0001</a>
+        </td>
+        <td>
+          Admin theme, marketing theme Admin theme, marketing theme Admin theme, marketing theme Admin theme, marketing theme
+        </td>
+        <td style="text-align: center;">
+          2
+        </td>
+        <td style="text-align: center;">
+          Иванов В.В.
+        </td>
+        <td style="text-align: center;">
+          5000
+        </td>
+        <td style="text-align: center;">
+          Орел В.В.
+        </td>
+      </tr>
+
+      <tr class="hover_line_table" style="border-bottom: solid 1px #434857">
+        <td>
+          04/27/2021
+        </td>
+        <td>
+          <a href="#">#0002</a>
+        </td>
+        <td>
+          Admin theme, marketing theme Admin theme, marketing theme Admin theme, marketing theme Admin theme, marketing theme
+        </td>
+        <td style="text-align: center;">
+          7
+        </td>
+        <td style="text-align: center;">
+          Иванов В.В.
+        </td>
+        <td style="text-align: center;">
+          3000
+        </td>
+        <td style="text-align: center;">
+          Орел В.В.
+        </td>
+      </tr>
+      
+
+      
+      
+      
+      
+      
+      
+    </tbody>
+  </table>
+</div>
+
+<div class="text-center">
+  <nav>
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <!-- <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li> -->
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  
+
+
+    <script src="jquery.min.js"></script>
+    <script src="tether.min.js"></script>
+    <script src="chart.js"></script>
+    <script src="tablesorter.min.js"></script>
+    <script src="toolkit.js"></script>
+    <script src="application.js"></script>
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+    </script>
+  </body>
+</html>
+
+
+
+
+<!-- 
+
+7b7d81
+
+ -->
